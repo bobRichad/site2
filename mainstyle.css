@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    vertical-align: top;
+}
+h1{
+    font-family: 'SBAggroB';
+}
+/* con의 h2가 가운데 오게 하려고 */
+.con{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke
+}
+.con h2{
+    font-size: 30px;
+}
+header{
+    background-color: #19191c;
+    padding: 20px 30px;
+    color: white;
+    /* 나열 */
+    display: flex;
+    align-items: center;
+    /* 칸 떨구기 */
+    justify-content: space-between;
+    /* 상단에 뜨게 */
+    position: fixed;
+    top: 60px;
+    width: 90%;
+    /* 앞으로 나오게 */
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* 메뉴바 가로로 두기 */
+header nav ul{
+    display: flex;
+}
+header nav ul li{
+    margin-left: 50px;
+    font-weight: bold;
+}
+#about{
+    position: relative;
+    /* 영역이 넘칠수도 있기 때문에 */
+    overflow: hidden;
+}
+#about h2{
+    font-size: 80px;
+}
+#about video{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+#pro1{
+    background: url(media/밀양2.jpg) center/cover;
+    background-attachment: fixed;
+}
+#pro2{
+    background: url(media/뭐더라덮밥.jpg) center/cover;
+    background-attachment: fixed;
+}
+#pro3{
+    background: url(media/리뷰더러움.jpg) center/cover;
+    background-attachment: fixed;
+}

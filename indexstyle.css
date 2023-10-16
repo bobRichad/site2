@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.jb-box { width: 100%; height: 100%; overflow: hidden;margin: 0px auto; }
+      video { width: 100%; }
+      
+
+@font-face {
+    font-family: 'PartialSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/PartialSansKR-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HakgyoansimGaeulsopungB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimGaeulsopungB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body{
+    background-color: #434343;
+}
+
+.wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+/* 동영상 상단부에 글이 보이게 하려고 */
+.title{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+
+#ti_text{
+    color: white;
+    text-align: right;
+    font-family: 'PartialSansKR-Regular';
+    font-size: xx-large;
+}
+
+.le_text{
+    font-size: 3rem;
+    font-family: 'HakgyoansimGaeulsopungB';
+}
+/* 글자 쓰는것처럼 커서를 깜빡이게 만들었다 */
+#dynamic{
+    position: relative;
+    display: inline-block;
+}
+
+#dynamic::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 4px;
+    height: 100%;
+    background-color: white;
+}
+#dynamic.active::after{
+    display: none;
+}
+a {
+    color: white;
+    text-decoration-line: none;
+}
